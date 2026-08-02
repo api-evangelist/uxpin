@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.uxpin.com/security
+notes: UXPin publishes no public REST API or OpenAPI, so API-protocol standards
+  (JSON:API, RFC 9457, OData, FHIR, FAPI, SCIM) are not applicable/assessable.
+  Compliance claims below are taken from the published security page
+  (https://www.uxpin.com/security) and the provider's own llms.txt.
+standards:
+- id: pci-dss
+  conforms: true
+  evidence: Security page states UXPin is certified PCI DSS A-EP 3.2; AWS infrastructure certified PCI DSS 3.2 Level 1.
+- id: soc2
+  conforms: true
+  evidence: Security page cites SOC 2 certified infrastructure hosted by AWS; llms.txt claims SOC 2 compliance.
+- id: gdpr
+  conforms: true
+  evidence: llms.txt Compliance section claims GDPR compliance; privacy policy at https://www.uxpin.com/privacy.
+- id: saml2
+  conforms: true
+  evidence: Security page states SSO is supported over SAML 2.0; docs cover SAML/SSO setup.
+- id: oauth2
+  conforms: false
+  evidence: No public OAuth 2.0 authorization surface found (no /.well-known/oauth-authorization-server, no documented scopes).
+- id: oidc
+  conforms: false
+  evidence: No OpenID Connect discovery document found on www/app hosts.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No public API error contract published.
+- id: scim
+  conforms: false
+  evidence: No SCIM provisioning endpoint documented in public docs.

@@ -1,7 +1,13 @@
 aid: uxpin
 name: UXPin
-description: UXPin is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: UXPin is an AI-powered, code-based design and prototyping platform where
+  designers work with real production React components instead of vector approximations.
+  Its Merge technology syncs a team's design system from Git or Storybook onto the
+  design canvas, its Forge AI assistant generates and iterates UI constrained to that
+  design system, and export is production-ready JSX referencing components already
+  in the codebase. The developer surface is the open-source Merge toolchain -
+  the @uxpin/merge-cli npm package that analyzes a component repository and pushes
+  components to UXPin - rather than a public REST API.
 url: https://raw.githubusercontent.com/api-evangelist/uxpin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +15,87 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Design
+- Prototyping
+- Design Systems
+- React
+- Components
+- AI
+- Developer Tools
 apis: []
+image: https://cdn.buttercms.com/hEANM0hTqezomJsApfaQ
+common:
+- type: TrustCenter
+  url: security/uxpin-trust-center.yml
+- type: DomainSecurity
+  url: security/uxpin-domain-security.yml
+- type: Website
+  url: https://www.uxpin.com/
+- type: Documentation
+  url: https://www.uxpin.com/docs
+- type: GettingStarted
+  url: https://www.uxpin.com/docs
+- type: Pricing
+  url: https://www.uxpin.com/pricing
+- type: Blog
+  url: https://www.uxpin.com/studio/blog/
+- type: ChangeLog
+  url: https://updates.uxpin.com
+- type: StatusPage
+  url: https://status.uxpin.com/
+- type: TermsOfService
+  url: https://www.uxpin.com/tos
+- type: PrivacyPolicy
+  url: https://www.uxpin.com/privacy
+- type: SignUp
+  url: https://www.uxpin.com/sign-up
+- type: Login
+  url: https://app.uxpin.com/
+- type: GitHubOrganization
+  url: https://github.com/UXPin
+- type: Support
+  url: mailto:support@uxpin.com
+- type: Compliance
+  url: https://www.uxpin.com/security
+- type: LLMsTxt
+  url: llms/uxpin-llms.txt
+- type: Packages
+  url: packages/uxpin-packages.yml
+- type: SDKs
+  url: packages/uxpin-packages.yml
+- type: CLI
+  url: cli/uxpin-cli.yml
+- type: WellKnown
+  url: well-known/uxpin-well-known.yml
+- type: Conformance
+  url: conformance/uxpin-conformance.yml
+- type: Lifecycle
+  url: lifecycle/uxpin-lifecycle.yml
+- type: Components
+  url: components/uxpin-components.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

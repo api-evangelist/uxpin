@@ -1,0 +1,51 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.uxpin.com/docs/merge/cli-tool/
+name: UXPin Merge CLI
+package: "@uxpin/merge-cli"
+repository: https://github.com/UXPin/uxpin-merge-tools
+docs: https://www.uxpin.com/docs/merge/cli-tool/
+description: The UXPin Merge CLI analyzes a design-system repository, prepares
+  component code for sending to UXPin, lets developers test components locally in
+  the Merge Dev Environment (experimental mode), and pushes components to a UXPin
+  account so designers work with real production React components on the canvas.
+install:
+- method: npm
+  command: npm i --save-dev @uxpin/merge-cli
+- method: yarn
+  command: yarn add @uxpin/merge-cli
+commands:
+- command: server
+  description: Start the local web server and display the list of design system components.
+- command: push
+  description: Upload design system repository information to UXPin.
+- command: dump
+  description: Show all information (in JSON) about the design system repository without sending it to UXPin.
+- command: summary
+  description: Show only the design system summary without building it.
+options:
+- flag: -v, --version
+  description: Output the version number.
+- flag: --webpack-config <path>
+  description: Path to a custom webpack config, relative to the current working directory.
+- flag: --wrapper <path>
+  description: Path to a custom component wrapper.
+- flag: --cwd <path>
+  description: Working directory - path to root of the design-system repository (default ./).
+- flag: --config <path>
+  description: Path to a config file (default ./uxpin.config.js).
+- flag: --port <number>
+  description: Port for the local server (default 8877).
+- flag: --skip-browser
+  description: Do not open the browser on start.
+- flag: --disable-tunneling
+  description: Disable tunneling requests through ngrok (experimental mode falls back to direct localhost; Chrome only).
+key_flows:
+- name: Integrate a design system with UXPin Merge
+  steps:
+  - Install @uxpin/merge-cli as a dev dependency in the design-system repo.
+  - Run the server command to preview components in the Merge Dev Environment (experimental mode).
+  - Run the push command (locally or from CI) to upload components to a UXPin account.
+notes: Experimental mode tunnels UXPin Editor requests to the local server via ngrok;
+  networks that block the tunnel should use --disable-tunneling. Component pushes
+  are typically wired into CI (see "Connecting code to UXPin (CI & push)" docs).

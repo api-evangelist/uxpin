@@ -1,0 +1,67 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=uxpin
+notes: First-party packages published under the @uxpin npm scope (maintainer uxpin-ci
+  <dev@uxpin.com>). UXPin's developer surface is the Merge toolchain, not a public
+  REST API, so all packages are npm/JavaScript. No first-party packages found on
+  PyPI, Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist, or crates.io.
+packages:
+- language: javascript
+  registry: npm
+  name: "@uxpin/merge-cli"
+  version: 3.7.2
+  url: https://www.npmjs.com/package/@uxpin/merge-cli
+  install: npm i --save-dev @uxpin/merge-cli
+  repository: https://github.com/UXPin/uxpin-merge-tools
+  description: Command-line tool that integrates a design system repository with UXPin Merge.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@uxpin/storybook-deployer"
+  version: 1.0.2
+  url: https://www.npmjs.com/package/@uxpin/storybook-deployer
+  install: npm i @uxpin/storybook-deployer
+  description: CLI to deploy a static Storybook to UXPin.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@uxpin/react-docgen-better-proptypes"
+  version: 0.1.2
+  url: https://www.npmjs.com/package/@uxpin/react-docgen-better-proptypes
+  install: npm i @uxpin/react-docgen-better-proptypes
+  description: Better support for prop types in react-docgen (used by the Merge toolchain).
+  official: true
+- language: javascript
+  registry: npm
+  name: "@uxpin/expressions"
+  version: 0.0.3
+  url: https://www.npmjs.com/package/@uxpin/expressions
+  install: npm i @uxpin/expressions
+  description: UXPin expressions used in interactions created in the UXPin editor.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@uxpin/shadcn"
+  version: 1.2.0
+  url: https://www.npmjs.com/package/@uxpin/shadcn
+  install: npm i @uxpin/shadcn
+  description: Pre-built shadcn/ui components optimized for UXPin Merge integration.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@uxpin/shadcn-merge"
+  version: 0.1.0-dev
+  url: https://www.npmjs.com/package/@uxpin/shadcn-merge
+  install: npm i @uxpin/shadcn-merge
+  repository: https://github.com/UXPin/shadcn-merge
+  description: Open-source collection of reusable shadcn/ui components for Merge.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@uxpin/html-dnd"
+  version: 2.2.1
+  url: https://www.npmjs.com/package/@uxpin/html-dnd
+  install: npm i @uxpin/html-dnd
+  repository: https://github.com/UXPin/html-dnd
+  description: HTML drag-and-drop simulator for E2E testing.
+  official: true

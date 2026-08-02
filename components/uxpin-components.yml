@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.uxpin.com/llms.txt
+notes: UXPin Merge renders real code-backed React component libraries on the design
+  canvas. These are the built-in and open-source component surfaces UXPin publishes;
+  custom libraries sync via Git (bidirectional) or Storybook (15+ frameworks).
+families:
+- family: Built-in Merge libraries
+  components:
+  - name: MUI
+    description: Material UI React library (90+ components) rendered as real code on canvas.
+    url: https://www.uxpin.com/merge/mui-library
+  - name: Ant Design
+    url: https://www.uxpin.com/studio/blog/integrate-with-ant-design-npm/
+  - name: Bootstrap
+    url: https://www.uxpin.com/bootstrap-ui-kit
+  - name: Tailwind UI
+    url: https://www.uxpin.com/merge
+  - name: shadcn/ui
+    description: Pre-built shadcn/ui components optimized for Merge (npm @uxpin/shadcn).
+    url: https://www.uxpin.com/examples/shadcn-ui-library
+- family: Open-source Merge component repos
+  components:
+  - name: shadcn-merge
+    url: https://github.com/UXPin/shadcn-merge
+  - name: material-ui-5-merge
+    url: https://github.com/UXPin/material-ui-5-merge
+  - name: adele
+    description: Adele - repository of publicly available design systems and pattern libraries.
+    url: https://github.com/UXPin/adele
+loaders:
+- name: "@uxpin/merge-cli"
+  url: https://www.npmjs.com/package/@uxpin/merge-cli
+  description: Pushes a design-system repository's components into UXPin.
+- name: "@uxpin/storybook-deployer"
+  url: https://www.npmjs.com/package/@uxpin/storybook-deployer
+  description: Deploys a static Storybook to UXPin for Storybook-based sync.

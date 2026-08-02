@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.uxpin.com/
+status_page: https://status.uxpin.com/
+changelog: https://updates.uxpin.com/
+versioning:
+  scheme: none-public
+  notes: UXPin ships a continuously-updated SaaS platform; the Merge toolchain is
+    versioned via npm (@uxpin/merge-cli, currently 3.7.2). No public API versioning
+    policy exists because no public REST API is documented.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No published deprecation policy or RFC 8594 Sunset-header support found.
+sla:
+  url: null
+  notes: llms.txt states Enterprise plans include custom SLAs; no public SLA page found.
+deprecated_operations: []

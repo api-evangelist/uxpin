@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+source: https://www.uxpin.com/security
+url: https://www.uxpin.com/security
+certifications:
+- SOC 2
+- PCI DSS
+- HIPAA
+- FedRAMP
+notes: UXPin itself is certified PCI DSS A-EP 3.2; SOC 2 refers to its AWS-hosted
+  infrastructure. HIPAA and FedRAMP keyword hits refer to certifications held by
+  the third-party datacenter/hosting provider, not by UXPin directly.
+evidence:
+- source: https://www.uxpin.com/security
+  keywords:
+  - soc 2
+  - pci dss
+  - hipaa
+  - fedramp

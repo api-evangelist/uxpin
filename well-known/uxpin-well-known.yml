@@ -1,0 +1,46 @@
+generated: '2026-07-21'
+method: searched
+notes: Probed the marketing host (www.uxpin.com), the application host (app.uxpin.com),
+  and the API host (api.uxpin.com). app.uxpin.com returns HTTP 200 with the SPA login
+  HTML page for every /.well-known/ path (catch-all soft-200, content-type text/html),
+  so those are recorded as absent. The only real discovery document found is
+  /llms.txt on www.uxpin.com (saved at llms/uxpin-llms.txt).
+hosts:
+- host: https://www.uxpin.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 200
+    file: ../llms/uxpin-llms.txt
+- host: https://app.uxpin.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    soft_200: true
+    note: SPA catch-all returns the HTML login page (text/html), not a security.txt.
+  - path: /.well-known/openid-configuration
+    status: 200
+    soft_200: true
+    note: SPA catch-all returns HTML, not an OIDC discovery document.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    soft_200: true
+  - path: /.well-known/api-catalog
+    status: 200
+    soft_200: true
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    soft_200: true
+- host: https://api.uxpin.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
