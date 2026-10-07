@@ -61,6 +61,8 @@ tags_raw:
 apis: []
 image: https://cdn.buttercms.com/hEANM0hTqezomJsApfaQ
 common:
+- type: Plans
+  url: plans/uxpin-plans-pricing.yml
 - url: https://www.uxpin.com/studio/feed/
   type: BlogRSS
 - type: TrustCenter
