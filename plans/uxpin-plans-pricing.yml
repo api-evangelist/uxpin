@@ -1,0 +1,68 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.uxpin.com/pricing
+sources:
+- https://www.uxpin.com/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: per-seat
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+  managed_tier: Core
+published: true
+note: Seat-based SaaS design tool with monthly/annual tiers plus AI credit add-ons; Enterprise is custom
+  priced.
+plan_count: 6
+currency: USD
+plans:
+- name: Core (monthly)
+  price_text: $49 / month / seat
+  price: 49
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: 'Basic AI models; Credits / month: 200; Unlimited prototypes; 7-day version history'
+  overage: 'Add more AI credits: 200 · $13/month, 500 · $31/month, 750 · $46/month, 1000 · $61/month,
+    1500 · $88/month, 2000 · $115/month'
+- name: Growth (monthly)
+  price_text: $69 / month / seat
+  price: 69
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: 'Advanced AI models; Credits / month: 500; 30-day version history'
+  overage: 'Add more AI credits: 200 · $13/month, 500 · $31/month, 750 · $46/month, 1000 · $61/month,
+    1500 · $88/month, 2000 · $115/month'
+- name: Core (annual)
+  price_text: $29 / month / seat
+  price: 29
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: 'Credits / month: 200'
+- name: Growth (annual)
+  price_text: $40 / month / seat
+  price: 40
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: 'Credits / month: 500'
+- name: Enterprise
+  price_text: Custom price
+  period: none
+  included_quota: Custom credits, Git integration, dedicated support
+- name: Free
+  price_text: '50'
+  price: 50
+  period: none
+  unit: AI credits
+  included_quota: 50 AI credits, 2 prototypes, MUI (20 components)
+rate_limit_statements:
+- Prototypes limit 2
+- AI credits 50
