@@ -64,20 +64,105 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-UXPin is an AI-powered, code-based design and prototyping platform where designers work with real production React components instead of vector approximations. Its Merge technology syncs a team's design system from Git or Storybook onto the design canvas, its Forge AI assistant generates and iterates UI constrained to that design system, and export is production-ready JSX referencing components already in the codebase.
+UXPin is an AI-powered, code-based design and prototyping platform where designers work with real production React components instead of vector approximations. Its Merge technology syncs a team's design system from Git or Storybook onto the design canvas, its Forge AI assistant generates and iterates UI constrained to that design system, and export is production-ready JSX referencing components already in the codebase. The developer surface is the open-source Merge toolchain - the @uxpin/merge-cli npm package that analyzes a component repository and pushes components to UXPin - rather than a public REST API.
 
-UXPin publishes no public REST API — its developer surface is the open-source Merge toolchain, centered on the [`@uxpin/merge-cli`](https://www.npmjs.com/package/@uxpin/merge-cli) npm package (repo: [UXPin/uxpin-merge-tools](https://github.com/UXPin/uxpin-merge-tools)), which analyzes a design-system repository and pushes components to UXPin. An MCP integration for AI coding tools is on the provider's published roadmap.
+**Areas:** Company · Design · Prototyping · Design Systems · React · Components · Artificial Intelligence · Developer Tools
 
-Backed by: a16z
+## UXPin on APIs.io
 
-## Artifacts
+Everything profiled for UXPin is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/uxpin/](https://apis.io/providers/uxpin/)** — or go straight to one of the APIs or properties below.
 
-- `llms/uxpin-llms.txt` — provider-published llms.txt (harvested verbatim from https://www.uxpin.com/llms.txt)
-- `packages/uxpin-packages.yml` — first-party npm packages under the @uxpin scope
-- `cli/uxpin-cli.yml` — UXPin Merge CLI command surface
-- `components/uxpin-components.yml` — Merge code-backed component libraries
-- `well-known/uxpin-well-known.yml` — /.well-known/ probe results
-- `conformance/uxpin-conformance.yml` — published compliance claims (PCI DSS A-EP 3.2, SOC 2 infra, GDPR, SAML 2.0)
-- `lifecycle/uxpin-lifecycle.yml` — status page, changelog, versioning posture
-- `security/uxpin-domain-security.yml` — TLS/HSTS/DNS probe results
-- `security/uxpin-trust-center.yml` — security page certifications
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [uxpin](https://apis.io/servers/uxpin/uxpin/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Uxpin Domain Security](https://apis.io/security/uxpin/uxpin-domain-security/)
+- [Uxpin Trust Center](https://apis.io/security/uxpin/uxpin-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Uxpin Plans Pricing](https://apis.io/plans/uxpin/uxpin-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.uxpin.com/)
+- [Documentation](https://www.uxpin.com/docs)
+- [Getting started](https://www.uxpin.com/docs)
+- [Pricing](https://www.uxpin.com/pricing)
+- [Sign up](https://www.uxpin.com/sign-up)
+- [Changelog](https://updates.uxpin.com)
+- [Blog](https://www.uxpin.com/studio/blog/)
+- [Compliance](https://www.uxpin.com/security)
+- [Terms of service](https://www.uxpin.com/tos)
+- [Privacy policy](https://www.uxpin.com/privacy)
+- [GitHub](https://github.com/UXPin)
+- [Status](https://status.uxpin.com/)
+
+## API Evangelist rating
+
+**Kin Score 40.5** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 58.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 92.1 |
+
+**Agent readiness 15.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 21.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/uxpin/](https://apis.io/providers/uxpin/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for UXPin: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/uxpin/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
